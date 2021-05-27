@@ -29,9 +29,9 @@ const Counter = (props) => {
       </button>
       <button
         disabled={!show}
-        onClick={() => dispatch(counterActions.increment())}
+        onClick={() => dispatch(counterActions.decrement())}
       >
-        INC
+        DEC
       </button>
       <button
         disabled={!show}

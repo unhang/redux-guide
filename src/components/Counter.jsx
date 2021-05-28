@@ -29,7 +29,7 @@ const Counter = (props) => {
         disabled={!show}
         onClick={() => dispatch(counterActions.decrement())}
       >
-        INC
+        DEC
       </button>
       <button
         disabled={!show}

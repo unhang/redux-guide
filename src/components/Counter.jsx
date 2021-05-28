@@ -1,9 +1,7 @@
-// import { connect } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 import classes from "./Counter.module.css";
-// import { INCREMENT, DECREMENT } from "../store/counterReducer";
-import { counterActions } from "../store";
-import { useDispatch, useSelector } from "react-redux";
+import { counterActions } from "../store/counterSlice";
 
 const Counter = (props) => {
   const dispatch = useDispatch();
@@ -29,7 +27,7 @@ const Counter = (props) => {
       </button>
       <button
         disabled={!show}
-        onClick={() => dispatch(counterActions.increment())}
+        onClick={() => dispatch(counterActions.decrement())}
       >
         INC
       </button>
